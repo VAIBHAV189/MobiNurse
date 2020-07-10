@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+          <h3 class="text-center">
+            Welcome Doctor
+          </h3>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">  
+          <button id="recordbtn" class="btn btn-dark text-light" onclick="Rec();">RECORD</button>
+          <button id="pausebtn" class="btn btn-success text-light" onclick="Pause();">PAUSE</button>
+          <button id="stopbtn" class="btn btn-danger text-light" onclick="Stop();">STOP</button>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">  
+          <ul id="list">
+  
+          </ul>
+        </div>
+        <div class="row justify-content-md-center">
+          <button class="btn btn-secondary"><a href="/" class="text-light">Go back</a></button>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">
+          <img src = "mic.png">
+        </div>
+      </div>
+  
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div> 
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+<script src="app.js"></script>
+<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+<script src='jQuEry.js'></script>
+<script src='script.js'></script>
+</html>
